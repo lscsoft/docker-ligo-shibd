@@ -8,3 +8,5 @@ RUN yum upgrade -y && \
     systemctl enable shibd.service
 
 COPY login.ligo.org.cert.LIGOCA.pem /etc/shibboleth/login.ligo.org.cert.LIGOCA.pem
+
+VOLUME /var/run/shibboleth
