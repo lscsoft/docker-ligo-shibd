@@ -9,3 +9,4 @@ RUN yum upgrade -y && \
     systemctl enable httpd.service
 
 COPY login.ligo.org.cert.LIGOCA.pem /etc/shibboleth/login.ligo.org.cert.LIGOCA.pem
+COPY inc-md-cert.pem /etc/shibboleth/inc-md-cert.pem
